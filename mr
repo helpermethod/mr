@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+mr() {
+  local url=$(git remote get-url origin)
+
+  # on OSes other than Mac OS X replace `open -a "Google Chrome` with your browsers executable, e.g. google-chrome on Ubuntu
+  open -a 'Google Chrome' "${url%.git}/merge_requests/new?merge_request[source_branch]=$(git symbolic-ref -q --short HEAD)"
+}
+
+mr
