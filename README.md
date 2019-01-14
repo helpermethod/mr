@@ -1,5 +1,5 @@
 # mr
-Open GitLab Merge Requests from the commandline
+Open GitLab Merge Requests from the commandline.
 
 ## Installation
 
