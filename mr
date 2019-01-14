@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+set -e
+
+[[ $TRACE ]] && set -x
+
 mr() {
   local url=$(git remote get-url origin)
 
