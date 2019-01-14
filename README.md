@@ -4,7 +4,7 @@ A Bash script to open GitLab Merge Requests from the commandline.
 ## Installation
 
 ```sh
-$ curl -sSL https://raw.githubusercontent.com/helpermethod/mr/master/mr > /usr/local/bin/mr
+$ curl -sSL https://raw.githubusercontent.com/helpermethod/mr/master/mr > /usr/local/bin/mr && chmod u+x !$
 ```
 
 ## Usage
