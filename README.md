@@ -1,4 +1,7 @@
 # mr
+
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://raw.githubusercontent.com/helpermethod/mr/master/LICENSE)
+
 A Bash script to open GitLab Merge Requests from the commandline.
 
 ## Requirements
