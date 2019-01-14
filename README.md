@@ -1,5 +1,5 @@
 # mr
-Open GitLab Merge Requests from the commandline.
+A Bash script to open GitLab Merge Requests from the commandline.
 
 ## Installation
 
