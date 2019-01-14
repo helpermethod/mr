@@ -9,7 +9,7 @@ $ curl -sSL https://raw.githubusercontent.com/helpermethod/mr/master/mr > /usr/l
 
 ## Usage
 
-After you have pushed a commit, type mr on the commandline.
+After you have pushed a commit, type `mr on the commandline.
 
 ```sh
 $ git commit -a -m 'Update README.md'
