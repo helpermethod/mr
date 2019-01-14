@@ -1,6 +1,12 @@
 # mr
 A Bash script to open GitLab Merge Requests from the commandline.
 
+## Requirements
+
+* Mac OS X
+* Chrome
+* cURL
+
 ## Installation
 
 ```sh
