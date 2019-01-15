@@ -5,8 +5,10 @@ set -e
 mr() {
   local url
   url=$(git remote get-url origin)
+	local cmd
+	[[ $OSTYPE = darwin* ]] && cmd=xdg-open || cmd=open
 
-  open "${url%.git}/merge_requests/new?merge_request[source_branch]=$(git symbolic-ref -q --short HEAD)"
+  "$cmd" "${url%.git}/merge_requests/new?merge_request[source_branch]=$(git symbolic-ref -q --short HEAD)"
 }
 
 mr
