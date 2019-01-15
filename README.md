@@ -4,10 +4,9 @@
 
 A Bash script to open GitLab Merge Requests from the commandline.
 
-## Requirements
+## Features
 
-* Mac OS X
-* Chrome
+* uses `open` on Mac OS X and `xdg-open`on Linux
 
 ## Installation
 
