@@ -6,7 +6,17 @@ mr() {
   local url
   url=$(git remote get-url origin)
 	local cmd
-	[[ $OSTYPE = darwin* ]] && cmd=xdg-open || cmd=open
+
+  case "$OSTYPE" in
+    darwin*) 
+      cmd=open
+			;;
+    cygwin)
+      cmd=cygstart
+    *)
+		  # just assume we're on Linux
+		  cmd=xdg-open
+  esac
 
   "$cmd" "${url%.git}/merge_requests/new?merge_request[source_branch]=$(git symbolic-ref -q --short HEAD)"
 }
