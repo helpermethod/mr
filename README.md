@@ -6,7 +6,7 @@ A Bash script to open GitLab Merge Requests from the commandline.
 
 ## Features
 
-* supports `Mac OS X`, `Cygwin` and most `Linux` flavors.
+* supports `Mac OS X`, `Cygwin` and most `Linux` flavors
 
 ## Installation
 
