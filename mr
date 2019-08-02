@@ -3,12 +3,16 @@
 set -e
 
 mr() {
-  local url
-  url=$(git remote get-url origin)
+  local remote_url
+  remote_url=$(git remote get-url origin)
+  local gitlab_url
+  # let's hope no one uses gitlab w/o SSL
+  gitlab_url=${remote_url/gitlab@/https://}
+
   local cmd
 
   case "$OSTYPE" in
-    darwin*) 
+    darwin*)
       cmd=open
       ;;
     cygwin)
