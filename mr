@@ -23,7 +23,7 @@ mr() {
       cmd=xdg-open
   esac
 
-  "$cmd" "${url%.git}/merge_requests/new?merge_request[source_branch]=$(git symbolic-ref -q --short HEAD)"
+  "$cmd" "${gitlab_url%.git}/merge_requests/new?merge_request[source_branch]=$(git symbolic-ref -q --short HEAD)"
 }
 
 mr
