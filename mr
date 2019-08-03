@@ -5,9 +5,6 @@ set -e
 mr() {
   local remote_url
   remote_url=$(git remote get-url origin)
-  local gitlab_url
-  # let's hope no one uses gitlab w/o SSL
-  gitlab_url=${remote_url/gitlab@/https://}
 
   local cmd
 
@@ -23,7 +20,7 @@ mr() {
       cmd=xdg-open
   esac
 
-  "$cmd" "${gitlab_url%.git}/merge_requests/new?merge_request[source_branch]=$(git symbolic-ref -q --short HEAD)"
+  "$cmd" "${remote_url%.git}/merge_requests/new?merge_request[source_branch]=$(git symbolic-ref -q --short HEAD)"
 }
 
 mr
