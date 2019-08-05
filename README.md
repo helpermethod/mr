@@ -8,6 +8,10 @@ Open GitLab Merge Requests from the commandline.
 
 * supports `Mac OS X`, `Cygwin` and most `Linux` flavors
 
+## Limitations
+
+* only works with `HTTP(S)` remote URLs
+
 ## Installation
 
 ```sh
