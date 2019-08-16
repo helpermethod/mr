@@ -28,4 +28,4 @@ git push
 mr
 ```
 
-A window with the new Merge Request will open in your browser.
+A window with a new Merge Request will open in your browser.
