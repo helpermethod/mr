@@ -6,6 +6,11 @@ mr() {
   local remote_url
   remote_url=$(git remote get-url origin)
 
+  if [[ $remote_url = gitlab* ]]; then
+    remote_url=${remote_url/://}
+    remote_url=${remote_url/gitlab@/https://}
+  fi
+
   local cmd
 
   case "$OSTYPE" in
