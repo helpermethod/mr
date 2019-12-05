@@ -11,21 +11,9 @@ mr() {
     remote_url=${remote_url/gitlab@/https://}
   fi
 
-  local cmd
+  remote_url=${remote_url%.git}
 
-  case "$OSTYPE" in
-    darwin*)
-      cmd=open
-      ;;
-    cygwin)
-      cmd=cygstart
-      ;;
-    *)
-      # just assume we're on Linux
-      cmd=xdg-open
-  esac
-
-  "$cmd" "${remote_url%.git}/merge_requests/new?merge_request[source_branch]=$(git symbolic-ref -q --short HEAD)&merge_request[force_remove_source_branch]=true"
+  git web--browse "${remote_url}/merge_requests/new?merge_request[source_branch]=$(git symbolic-ref -q --short HEAD)&merge_request[force_remove_source_branch]=true"
 }
 
 mr
