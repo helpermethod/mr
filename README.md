@@ -6,7 +6,7 @@ Open GitLab Merge Requests from the commandline.
 
 ## Features
 
-* supports `Mac OS X`, `Cygwin` and most `Linux` flavors
+* depends on no external command other than `git`
 
 ## Installation
 
