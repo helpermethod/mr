@@ -6,7 +6,7 @@ Open GitLab Merge Requests from the commandline.
 
 ## Features
 
-* depends on no external command other than `git`
+* no dependencies except `git`
 
 ## Installation
 
