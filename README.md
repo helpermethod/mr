@@ -1,6 +1,7 @@
 # mr
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/helpermethod/mr/master/LICENSE)
+[![Maintainability](https://api.codeclimate.com/v1/badges/30893dd0a73aa942ce18/maintainability)](https://codeclimate.com/github/helpermethod/mr/maintainability)
 
 Open GitLab Merge Requests from the commandline.
 
