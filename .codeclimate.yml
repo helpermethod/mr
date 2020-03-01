@@ -5,3 +5,4 @@ plugins:
 exclude_patterns:
   - README.md
   - LICENSE
+  - .codeclimate.yml
