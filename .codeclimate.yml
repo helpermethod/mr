@@ -1,8 +1,0 @@
-version: "2"
-plugins:
-  shellcheck:
-    enabled: true
-exclude_patterns:
-  - README.md
-  - LICENSE
-  - .codeclimate.yml
