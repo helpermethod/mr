@@ -6,9 +6,9 @@ mr() {
   local remote_url
   remote_url=$(git remote get-url origin)
 
-  if [[ $remote_url = gitlab* ]]; then
+  if [[ $remote_url = git* ]]; then
     remote_url=${remote_url/://}
-    remote_url=${remote_url/gitlab@/https://}
+    remote_url=${remote_url/git*@/https://}
   fi
 
   remote_url=${remote_url%.git}
