@@ -14,7 +14,7 @@ Open GitLab Merge Requests from the commandline.
 curl -sSL https://raw.githubusercontent.com/helpermethod/mr/master/mr > "$HOME"/bin/mr && chmod +x "$HOME"/bin/mr
 ```
 
-:exclamation: Make sure to add `$HOME/bin` to your `PATH`.
+:warning: Make sure to add `$HOME/bin` to your `PATH`.
 
 ## Usage
 
