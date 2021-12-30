@@ -11,7 +11,7 @@ Open GitLab Merge Requests from the commandline.
 ## Installation
 
 ```sh
-curl -sSL https://raw.githubusercontent.com/helpermethod/mr/master/mr > "$HOME"/bin/mr && chmod +x "$HOME"/bin/mr
+curl -sSL https://raw.githubusercontent.com/helpermethod/mr/master/mr > "$HOME"/bin/mr
 ```
 
 Make sure to add `$HOME/bin` to your `PATH`.
